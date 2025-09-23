@@ -11,6 +11,33 @@
       padding: 0;
       box-sizing: border-box;
     }
+/* --- Responsive toàn trang cho điện thoại --- */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;  /* giảm font nếu cần */
+    padding: 0 0.5rem; /* padding nhỏ 2 bên */
+  }
+
+  header, nav, .navbar, main {
+    max-width: 100%;   /* full width */
+    margin: 0;         /* bỏ margin tự động */
+    padding: 0.5rem;   /* padding nhẹ */
+  }
+
+  .dropbtn {
+    font-size: 16px;   /* nút menu nhỏ hơn */
+    padding: 8px 12px;
+  }
+
+  .dropdown-content {
+    min-width: 140px;  /* nhỏ hơn cho mobile */
+  }
+
+  .post {
+    padding: 1rem;     /* bài viết co lại vừa khung mobile */
+    margin-bottom: 1rem;
+  }
+}
 
     body {
       background: #000;
