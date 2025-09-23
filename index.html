@@ -2,8 +2,8 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>wraithdotsol</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <title>Wraith</title>
+  <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
   <!-- Favicon con mèo GitHub -->
   <link rel="icon" href="https://github.githubassets.com/favicons/favicon.png" type="image/png">
   <style>
@@ -12,8 +12,6 @@
       background: #000;
       color: #fff;
       font-family: 'Oswald', sans-serif;
-      display: flex;
-      flex-direction: column;
       min-height: 100vh;
     }
 
@@ -25,7 +23,7 @@
     }
 
     .dropbtn {
-      background: #000;
+      background: none;
       color: #fff;
       font-size: 18px;
       border: none;
@@ -34,40 +32,32 @@
       padding: 8px 14px;
     }
 
-    .dropbtn:hover {
-      background: #222;
-    }
-
     .dropdown-content {
       display: none;
       position: absolute;
-      background: #111;
+      background: #000;
       min-width: 160px;
       z-index: 1;
     }
 
     .dropdown-content a {
       color: #fff;
-      padding: 10px 14px;
+      padding: 8px 14px;
       text-decoration: none;
       display: block;
-    }
-
-    .dropdown-content a:hover {
-      background: #222;
     }
 
     .navbar:hover .dropdown-content {
       display: block;
     }
 
-    /* Nội dung giữa màn hình */
+    /* Nội dung ở giữa màn hình */
     main {
-      flex: 1;
+      min-height: 100vh; /* chiếm toàn màn hình */
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: center; /* canh dọc */
+      align-items: center;     /* canh ngang */
       text-align: center;
       padding: 2rem;
     }
@@ -80,17 +70,9 @@
     .links a {
       display: block;
       margin: 10px 0;
-      padding: 12px 20px;
-      background: #111;
+      font-size: 20px;
       color: #fff;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.2s;
-      font-size: 20px;
-    }
-
-    .links a:hover {
-      background: #333;
     }
   </style>
 </head>
