@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài viết 1</title>
+  <link rel="stylesheet" href="../css/style.css"> <!-- CSS chung -->
+</head>
+<body>
+  <header>
+    <a href="../index.html">← Về trang chủ</a>
+  </header>
+  <main>
+    <h1>Bài viết 1</h1>
+    <p>In 2008, the world plunged into a financial crisis that shook the foundations of global economies. Major banks collapsed, governments scrambled to print money to prop up failing systems, and ordinary people watched helplessly as their savings and assets faced the threat of devaluation at any moment. Trust in the traditional financial system—built on the fragile premise that banks would safeguard your money—began to crumble. It became painfully clear that banks could overextend loans, go bankrupt, and leave depositors with nothing.<br><br>Amid this chaos, a mysterious figure named Satoshi Nakamoto emerged with a radical idea: Bitcoin, a peer-to-peer digital currency that operated without banks, governments, or any central authority. This wasn’t just a new kind of money; it was a direct challenge to the status quo. Before 2008, the financial system hinged on trust—you handed your money to a bank, believing they’d keep it safe. But the reality was stark: banks could overextend loans, go bankrupt, and leave you empty-handed. Bitcoin proposed a different path, one where trust wasn’t placed in institutions but in open-source code, mathematics, and cryptography.<br><br>At the heart of Bitcoin lies the concept of the block. Picture each block as a secure box, containing a record of transactions—who sent what, to whom, and how much. These boxes are linked together in a continuous chain, forming what’s known as the blockchain. This chain acts like a public ledger, transparently documenting every transaction for anyone to verify. But here’s the catch: while the blockchain records the existence of these boxes, accessing the funds inside requires a private key—a digital “key” that only you possess. Lose that key, and your Bitcoin is locked away forever, irretrievable by anyone, even the system itself.Satoshi Nakamoto didn’t just create a currency; they laid the groundwork for a new kind of financial system. Bitcoin is transparent—every transaction is etched onto the blockchain, open for all to audit. It’s decentralized—no bank or government can freeze your funds or manipulate the system. The supply is capped at 21 million coins, a stark contrast to fiat currencies that governments can print endlessly. Most importantly, Bitcoin empowers individuals. By holding your own private key, you control your wealth, and as long as you protect it, no one can take it away.In a world where trust in banks and governments faltered, Bitcoin emerged as a decentralized alternative, a beacon of fairness and transparency. It’s more than just digital money—it’s a reminder that we can build a financial system that doesn’t rely on a single, fallible institution but instead places power back in the hands of individuals.
+
+</p>
+  </main>
+</body>
+</html>
