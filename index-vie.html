@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wraithdotsol</title>
+  <link rel="icon" href="favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center; /* căn giữa block theo ngang */
+      align-items: flex-start; /* khối nội dung ở trên cùng */
+      padding-top: 2rem;      /* khoảng cách trên */
+    }
+    
+      /* CSS gốc cho desktop */
+    .container {
+      max-width: 480px;   /* giới hạn chiều rộng trên desktop */
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;     /* căn giữa desktop */
+    }
+
+      /* CSS cho mobile */
+      @media screen and (max-width: 600px) {
+    .container {
+       max-width: 100%;  /* full width trên điện thoại */
+      padding: 1rem;
+      margin: 0;        /* bỏ margin 2 bên */
+      }
+  }
+
+    h1 {
+      font-size: 1.2rem;
+      line-height: 1.4rem;       /* giảm khoảng cách dòng */
+      margin-bottom: 2rem;
+      text-align: left;
+      font-weight: normal;        /* bỏ in đậm */
+      letter-spacing: normal;     /* giảm khoảng cách giữa chữ */
+    }
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      margin: 2rem 0 1rem;
+      text-transform: uppercase;
+      color: #ff6600;
+      letter-spacing: 1px;
+}
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .links a {
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Không phải là Builder, không phải là Dev. Chỉ là một con cá lười biếng, thích ngủ đông và không muốn giao dịch nhiều.<br><br>Đến với crypto vì một giấc mơ chưa thành. Tôi không tham gia vào một dự án sao chép. Bằng cách tổng hợp thông tin vụn vặt, đào sâu vào từng thành viên trong đội ngũ với các chi tiết chặt chẽ, tôi sẽ biết được giá trị thật sự của họ. Tôi tin vào giá trị thặng dư được chuyển hoá thành lợi nhuận dài hạn mà không phải là trò chơi pump & dump nhạt nhoà.<br><br>Thức giấc sau nhiều năm ngủ trên Bitcoin và Ethereum. Tôi thức dậy vì Solana và tin rằng <a href="https://jup.ag" style="color:#ff6600; text-decoration:none;" target="_blank">Jupiter</a> sẽ thay đổi cách mà mọi người tương tác với DeFi.</h1>
+
+    <h2>Góc nhìn về tiền</h2>
+    <div class="links">
+      <a href="#">Bitcoin & Satoshi</a>
+      <a href="#">Nỗi sợ của Ngân Hàng</a>
+    </div>
+
+    <h2>Về tôi</h2>
+    <div class="links">
+      <a href="#">Article 1</a>
+      <a href="#">Article 2</a>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
