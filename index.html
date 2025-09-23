@@ -2,10 +2,8 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Wraith</title>
-  <!-- Favicon GitHub -->
-  <link rel="icon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
-  <!-- Font Oswald -->
+  <title>wraithdotsol</title>
+  <link rel="icon" href="https://github.githubassets.com/favicons/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,159 +11,90 @@
       background: #000;
       color: #fff;
       font-family: 'Oswald', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
     }
 
-    /* --- Navbar --- */
-    .navbar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 1rem;
-    }
-
-    .dropbtn {
+    /* Navbar Dropdown */
+    nav {
+      width: 100%;
       background: #000;
+      padding: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropbtn {
+      background: none;
+      border: none;
       color: #fff;
       font-size: 20px;
-      border: none;
       cursor: pointer;
-      font-family: 'Oswald', sans-serif;
     }
-
-    .dropbtn:hover {
-      background: #222;
-    }
-
     .dropdown-content {
       display: none;
       position: absolute;
-      top: 50px;
+      top: 40px;
       left: 0;
       background: #111;
       min-width: 180px;
-      z-index: 1;
+      border-radius: 6px;
     }
-
     .dropdown-content a {
+      display: block;
       color: #fff;
-      padding: 10px 16px;
+      padding: 10px;
       text-decoration: none;
-      display: block;
     }
-
     .dropdown-content a:hover {
-      background: #222;
+      background: #333;
     }
-
-    .navbar:hover .dropdown-content {
+    .dropdown:hover .dropdown-content {
       display: block;
     }
 
-    /* --- Profile chính giữa --- */
-    .profile {
+    /* Nội dung trung tâm */
+    main {
+      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 5rem 1rem 3rem;
-      min-height: 100vh;
-      box-sizing: border-box;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 600px;
+      padding: 2rem;
     }
-
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      border: 3px solid #fff;
-      object-fit: cover;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
-    }
-
-    p {
-      font-size: 1.1rem;
-      max-width: 500px;
-      margin-bottom: 1.5rem;
-    }
-
-    /* --- Blog section --- */
-    .blog {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem 4rem;
-    }
-
-    .blog h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-
     .post {
-      background: #111;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      transition: background 0.3s;
+      text-align: center;
     }
-
-    .post:hover {
-      background: #222;
-    }
-
-    .post h3 {
-      margin: 0 0 0.5rem;
+    .post h2 {
+      margin: 0;
       font-size: 1.5rem;
     }
-
-    .post p {
+    .post a {
+      color: #fff;
+      text-decoration: none;
       font-size: 1rem;
-      color: #ccc;
+      opacity: 0.8;
+    }
+    .post a:hover {
+      opacity: 1;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <!-- Navbar -->
-  <div class="navbar">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-      <a href="https://example.com/page1" target="_blank">Trang 1</a>
-      <a href="https://example.com/page2" target="_blank">Trang 2</a>
-      <a href="https://example.com/page3" target="_blank">Trang 3</a>
-    </div>
-  </div>
-
-  <!-- Profile -->
-  <section class="profile">
-    <img src="https://placekitten.com/300/300" alt="Avatar" class="avatar">
-    <h1>Wraith</h1>
-    <p>Không phải là Builder, không phải là Dev.  
-       Chỉ là một người lười biếng, thích ngủ đông và không muốn giao dịch nhiều.</p>
-  </section>
-
-  <!-- Blog section -->
-  <section class="blog">
-    <h2>Bài viết mới</h2>
-
-    <div class="post">
-      <h3>Bài viết số 1</h3>
-      <p>Đây là đoạn mô tả ngắn gọn cho bài viết số 1. Bạn có thể chia sẻ suy nghĩ, trải nghiệm hoặc câu chuyện ở đây...</p>
-    </div>
-
-    <div class="post">
-      <h3>Bài viết số 2</h3>
-      <p>Một chút chia sẻ khác, có thể là về crypto, DAO, hoặc đơn giản là vài dòng nhật ký cá nhân...</p>
-    </div>
-
-    <div class="post">
-      <h3>Bài viết số 3</h3>
-      <p>Đây là ví dụ để hiển thị thêm nhiều bài viết. Bạn có thể thêm bao nhiêu post tuỳ thích.</p>
-    </div>
-  </section>
-</body>
-</html>
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#">Trang 1</a>
