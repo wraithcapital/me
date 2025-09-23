@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Wraith</title>
-  <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
-  <!-- Favicon con mèo GitHub -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!-- Favicon GitHub mèo đen nền trắng -->
   <link rel="icon" href="https://github.githubassets.com/favicons/favicon.png" type="image/png">
   <style>
     body {
@@ -12,92 +12,40 @@
       background: #000;
       color: #fff;
       font-family: 'Oswald', sans-serif;
-      min-height: 100vh;
-    }
-
-    /* Navbar góc trái */
-    .navbar {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-    }
-
-    .dropbtn {
-      background: none;
-      color: #fff;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      font-family: 'Oswald', sans-serif;
-      padding: 8px 14px;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background: #000;
-      min-width: 160px;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: #fff;
-      padding: 8px 14px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .navbar:hover .dropdown-content {
-      display: block;
-    }
-
-    /* Nội dung ở giữa màn hình */
-    main {
-      min-height: 100vh; /* chiếm toàn màn hình */
       display: flex;
       flex-direction: column;
-      justify-content: center; /* canh dọc */
-      align-items: center;     /* canh ngang */
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 2rem;
     }
 
     h1 {
-      margin-bottom: 2rem;
       font-size: 36px;
+      margin-bottom: 2rem;
     }
 
     .links a {
       display: block;
-      margin: 10px 0;
+      margin: 12px 0;
       font-size: 20px;
       color: #fff;
       text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .links a:hover {
+      opacity: 0.7; /* hiệu ứng nhẹ khi hover */
     }
   </style>
 </head>
 <body>
-  <!-- Menu dropdown -->
-  <div class="navbar">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-      <a href="https://example.com/page1" target="_blank">Trang 1</a>
-      <a href="https://example.com/page2" target="_blank">Trang 2</a>
-      <a href="https://example.com/page3" target="_blank">Trang 3</a>
-      <a href="https://example.com/page4" target="_blank">Trang 4</a>
-      <a href="https://example.com/page5" target="_blank">Trang 5</a>
-    </div>
+  <h1>Wraith</h1>
+  <div class="links">
+    <a href="https://example.com/a">Bài viết A</a>
+    <a href="https://example.com/b">Bài viết B</a>
+    <a href="https://example.com/c">Bài viết C</a>
+    <a href="https://example.com/d">Bài viết D</a>
   </div>
-
-  <!-- Nội dung chính -->
-  <main>
-    <h1>Wraith</h1>
-    <div class="links">
-      <a href="https://example.com/a">Bài viết A</a>
-      <a href="https://example.com/b">Bài viết B</a>
-      <a href="https://example.com/c">Bài viết C</a>
-      <a href="https://example.com/d">Bài viết D</a>
-    </div>
-  </main>
 </body>
 </html>
