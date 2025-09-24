@@ -50,10 +50,20 @@
       padding: 0;
       box-sizing: border-box;
     }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center; /* căn giữa block theo ngang */
+      align-items: flex-start; /* khối nội dung ở trên cùng */
+      padding-top: 2rem;      /* khoảng cách trên */
+    }
     
       /* CSS gốc cho desktop */
     .container {
-      position: relative; /* cần để lang-select bám góc */
       max-width: 480px;   /* giới hạn chiều rộng trên desktop */
       width: 100%;
       padding: 1rem;
@@ -109,9 +119,8 @@
     <!-- Chèn chọn ngôn ngữ ngay đây -->
     <div class="lang-select">
       <span class="lang-label">Select language:</span>
-      <span class="lang-links">
-        <a href="index.html" class="lang-link">🇺🇸 English</a><br>
-        <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
+      <a href="index.html" class="lang-link">🇺🇸 English</a>
+      <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
     </div>
     <h1>Hi, my name is <span class="highlight">Wraith</span>
 <span class="line-break">I'm not a Builder, not a Dev, just a lazy wraith who loves to hibernate and doesn’t want to trade much.
@@ -135,6 +144,7 @@
 </body>
 
 </html>
+
 
 
 
