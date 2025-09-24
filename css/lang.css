@@ -17,3 +17,7 @@
 .lang-link:hover {
   color: #ff6600;         /* chữ nổi cam khi hover */
 }
+
+.lang a:hover {
+  text-decoration: none;
+}
