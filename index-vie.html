@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta name="google" content="notranslate"> 
+  <meta name="google" content="notranslate">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>wraithdotsol</title>
@@ -9,7 +9,42 @@
   <link rel="apple-touch-icon" href="favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="lang.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/anti-copy.js"></script>
   <style>
+    .lang-label {
+      color: #fff;
+      font-size: 0.7rem;  /* chữ nhỏ */
+      font-style: italic;  /* nghiêng */
+      line-height: 1;
+      margin-right: 0rem; /* khoảng cách */
+    }
+
+    .line-break {
+      display: block;
+      margin: 0.2rem 0; /* khoảng cách nhỏ <br> */
+    }
+
+    .lang-select {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .lang-link {
+      color: #ff6600;
+      text-decoration: none;
+      font-size: 0.7rem;
+      line-height: 1;
+      font-style: italic;
+    }
+
+     .lang-link:hover {
+       text-decoration: underline;
+    }
+    
     * {
       margin: 0;
       padding: 0;
@@ -45,7 +80,7 @@
   }
 
     h1 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.4rem;       /* giảm khoảng cách dòng */
       margin-bottom: 2rem;
       text-align: left;
@@ -55,7 +90,7 @@
 
     h2 {
       font-family: 'Oswald', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 2rem 0 1rem;
       text-transform: uppercase;
       color: #ff6600;
@@ -69,7 +104,7 @@
     }
 
     .links a {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #fff;
       text-decoration: none;
     }
@@ -81,16 +116,23 @@
 </head>
 <body>
   <div class="container">
+    <!-- Chèn chọn ngôn ngữ ngay đây -->
     <div class="lang-select">
+      <span class="lang-label">Select language:</span>
       <a href="index.html" class="lang-link">🇺🇸 English</a>
       <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
     </div>
-    <h1>Không phải là Builder, không phải là Dev. Chỉ là một con cá lười biếng, thích ngủ đông và không muốn giao dịch nhiều.<br><br>Đến với crypto vì một giấc mơ chưa thành. Tôi không tham gia vào một dự án sao chép. Bằng cách tổng hợp thông tin vụn vặt, đào sâu vào từng thành viên trong đội ngũ với các chi tiết chặt chẽ, tôi sẽ biết được giá trị thật sự của họ. Tôi tin vào giá trị thặng dư được chuyển hoá thành lợi nhuận dài hạn mà không phải là trò chơi pump & dump nhạt nhoà.<br><br>Thức giấc sau nhiều năm ngủ trên Bitcoin và Ethereum. Tôi thức dậy vì Solana và tin rằng <a href="https://jup.ag" style="color:#ff6600; text-decoration:none;" target="_blank">Jupiter</a> sẽ thay đổi cách mà mọi người tương tác với DeFi.</h1>
+    <h1>Xin chào, tôi là <span class="highlight">Wraith</span>
+<span class="line-break">Tôi không phải là Builder, không phải là Dev, chỉ là một con cá lười biếng, thích ngủ đông và không muốn giao dịch nhiều.
+<span class="line-break">Tôi đang vật lộn với một công việc 12 tiếng ở web2 và 6 tiếng để tiếp tục mở rộng con đường bằng cách đắm mình vào web3. Đến với crypto vì một giấc mơ chưa thành. Tôi tìm kiếm một dự án mà mình có thể tồn tại song song với nó, đôi khi cuộc sống bắt chúng ta phải đánh cược vào thứ gì đó, bắt đầu từ ảo tưởng của một nhóm người...
+<span class="line-break">Tôi tin vào giá trị thặng dư được chuyển hoá thành lợi nhuận dài hạn, chỉ có con đường nhúng mình vào web3 mới giúp chúng ta hiểu cách thế giới vận hành trong tương lai.
+<span class="line-break">Thức giấc sau nhiều năm ngủ trên Bitcoin và Ethereum. Tôi thức dậy vì Solana và tin rằng <a href="https://jup.ag" style="color:#ff6600; text-decoration:none;" target="_blank">Jupiter</a> sẽ thay đổi cách mà mọi người tương tác với DeFi. 
+<span class="line-break">Cả ngành thay đổi và đi lên bởi những người xây dựng, không phải những kẻ ngủ đông như tôi. Đã đến lúc thức dậy và làm gì đó…</h1>
 
     <h2>Góc nhìn về tiền</h2>
     <div class="links">
-      <a href="#">Bitcoin & Satoshi</a>
-      <a href="#">Nỗi sợ của Ngân Hàng</a>
+      <a href="https://wraithcapital.github.io/me/vie/bitcoin-va-satoshi.html">Bitcoin & Satoshi</a>
+      <a href="#">Nỗi sợ của Ngân hàng</a>
     </div>
 
     <h2>Về tôi</h2>
@@ -102,6 +144,15 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
