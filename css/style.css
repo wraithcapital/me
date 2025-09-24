@@ -4,3 +4,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
+.highlight {
+  color: #ff6600; /* màu bạn muốn */
+  font-weight: normal; /* nếu muốn in đậm thêm */
+}
