@@ -53,6 +53,12 @@
       box-sizing: border-box;
     }
 
+    /* highlight link đang active */
+    .lang-link.active {
+      color: #cfcfcf; /* màu cho trang eng/vie */
+      text-decoration: none; /* không underline mặc định */
+    }
+
     body {
       background: #000;
       color: #fff;
@@ -124,7 +130,7 @@
     <!-- Chèn chọn ngôn ngữ ngay đây -->
     <div class="lang-select">
       <span class="lang-label">Select language:</span>
-      <a href="index.html" class="lang-link">🇺🇸 English</a>
+      <a href="index.html" class="lang-link active">🇺🇸 English</a>
       <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
     </div>
     <h1>Hi, my name is <span class="highlight">Wraith</span>
@@ -149,6 +155,7 @@
 </body>
 
 </html>
+
 
 
 
