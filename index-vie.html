@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/anti-copy.js"></script>
   <style>
-    .lang-label {
+     .lang-label {
       color: #fff;
       font-size: 0.7rem;  /* chữ nhỏ */
       font-style: italic;  /* nghiêng */
@@ -27,14 +27,16 @@
 
     .lang-select {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 0.5px;
+      right: 0.5px;
       display: flex;
-      gap: 0.75rem;
+      justify-content: flex-end
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .lang-link {
-      color: #ff6600;
+      color: #ffffff;
       text-decoration: none;
       font-size: 0.7rem;
       line-height: 1;
@@ -51,6 +53,12 @@
       box-sizing: border-box;
     }
 
+    /* highlight link đang active */
+    .lang-link.active {
+      color: #ff6600; /* màu cho trang eng/vie */
+      text-decoration: none; /* không underline mặc định */
+    }
+
     body {
       background: #000;
       color: #fff;
@@ -64,10 +72,12 @@
     
       /* CSS gốc cho desktop */
     .container {
+      position: relative;
       max-width: 480px;   /* giới hạn chiều rộng trên desktop */
       width: 100%;
       padding: 1rem;
       margin: 0 auto;     /* căn giữa desktop */
+      padding-top: 3rem; /* đẩy toàn bộ nội dung xuống */
     }
 
       /* CSS cho mobile */
@@ -76,7 +86,8 @@
        max-width: 100%;  /* full width trên điện thoại */
       padding: 1rem;
       margin: 0;        /* bỏ margin 2 bên */
-      }
+      padding-top: 2rem; /* đẩy toàn bộ nội dung xuống */
+    }
   }
 
     h1 {
@@ -120,7 +131,7 @@
     <div class="lang-select">
       <span class="lang-label">Select language:</span>
       <a href="index.html" class="lang-link">🇺🇸 English</a>
-      <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
+      <a href="index-vie.html" class="lang-link active">🇻🇳 Vietnamese</a>
     </div>
     <h1>Xin chào, tôi là <span class="highlight">Wraith</span>
 <span class="line-break">Tôi không phải là Builder, không phải là Dev, chỉ là một con cá lười biếng, thích ngủ đông và không muốn giao dịch nhiều.
@@ -144,6 +155,7 @@
 </body>
 
 </html>
+
 
 
 
