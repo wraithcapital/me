@@ -16,8 +16,7 @@
       color: #fff;
       font-size: 0.7rem;  /* chữ nhỏ */
       font-style: italic;  /* nghiêng */
-      line-height: 1;
-      margin-right: 0rem; /* khoảng cách */
+      margin-bottom: 0.3rem; /* khoảng cách */
     }
 
     .line-break {
@@ -26,14 +25,16 @@
     }
 
     .lang-select {
-      position: absolute;
-      top: 0.5px;
-      right: 0.5px;
       display: flex;
-      justify-content: flex-end
-      align-items: center;
-      gap: 0.5rem;
+      flex-direction: column;   /* sắp xếp dọc */
+      align-items: flex-start;  /* căn trái */
+      margin-bottom: 1rem;      /* khoảng cách với nội dung dưới */
     }
+    .lang-options {
+      display: flex;
+      flex-direction: column;   /* link xuống hàng */
+      gap: 0.25rem;             /* khoảng cách giữa các link */
+    } 
 
     .lang-link {
       color: #ffffff;
