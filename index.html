@@ -31,9 +31,10 @@
       right: 0.5px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end
-      align-items: center;
-      gap: 0.5rem;
+      align-items: flex-end;
+      max-width: 100%;        /* tránh tràn container */
+      box-sizing: border-box; /* tính padding vào width */
+      gap: 0.2rem;
     }
 
     .lang-links {
