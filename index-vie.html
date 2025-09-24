@@ -12,12 +12,11 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/anti-copy.js"></script>
   <style>
-     .lang-label {
+    .lang-label {
       color: #fff;
       font-size: 0.7rem;  /* chữ nhỏ */
       font-style: italic;  /* nghiêng */
-      line-height: 1;
-      margin-right: 0rem; /* khoảng cách */
+      margin-bottom: 0.3rem; /* khoảng cách */
     }
 
     .line-break {
@@ -26,14 +25,16 @@
     }
 
     .lang-select {
-      position: absolute;
-      top: 0.5px;
-      right: 0.5px;
       display: flex;
-      justify-content: flex-end
-      align-items: center;
-      gap: 0.5rem;
+      flex-direction: column;   /* sắp xếp dọc */
+      align-items: flex-start;  /* căn trái */
+      margin-bottom: 1rem;      /* khoảng cách với nội dung dưới */
     }
+    .lang-options {
+      display: flex;
+      flex-direction: column;   /* link xuống hàng */
+      gap: 0.2rem;             /* khoảng cách giữa các link */
+    } 
 
     .lang-link {
       color: #ffffff;
@@ -130,8 +131,8 @@
     <!-- Chèn chọn ngôn ngữ ngay đây -->
     <div class="lang-select">
       <span class="lang-label">Chọn ngôn ngữ:</span>
-      <a href="index.html" class="lang-link">🇺🇸 English</a>
-      <a href="index-vie.html" class="lang-link active">🇻🇳 Vietnamese</a>
+      <a href="index.html" class="lang-link">🇺🇸 Tiếng Anh</a>
+      <a href="index-vie.html" class="lang-link active">🇻🇳 Tiếng Việt</a>
     </div>
     <h1>Xin chào, tôi là <span class="highlight">Wraith</span>
 <span class="line-break">Tôi không phải là Builder, không phải là Dev, chỉ là một con cá lười biếng, thích ngủ đông và không muốn giao dịch nhiều.
