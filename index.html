@@ -34,6 +34,8 @@
     }
 
     .lang-link {
+      display: inline-block;
+      margin-left: 0.2rem; /* căn sang phải từ Select: */
       color: #ff6600;
       text-decoration: none;
       font-size: 0.7rem;
@@ -43,6 +45,7 @@
 
      .lang-link:hover {
        text-decoration: underline;
+       display: block;  /* mỗi link xuống 1 dòng */
     }
     
     * {
@@ -120,8 +123,9 @@
     <!-- Chèn chọn ngôn ngữ ngay đây -->
     <div class="lang-select">
       <span class="lang-label">Select language:</span>
-      <a href="index.html" class="lang-link">🇺🇸 English</a>
-      <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
+      <span class="lang-links">
+        <a href="index.html" class="lang-link">🇺🇸 English</a><br>
+        <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
     </div>
     <h1>Hi, my name is <span class="highlight">Wraith</span>
 <span class="line-break">I'm not a Builder, not a Dev, just a lazy wraith who loves to hibernate and doesn’t want to trade much.
@@ -145,6 +149,7 @@
 </body>
 
 </html>
+
 
 
 
