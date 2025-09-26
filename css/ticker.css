@@ -1,6 +1,10 @@
+/* Widget nhỏ gọn */
 gecko-coin-price-static-headline-widget {
-  display: block;
-  width: 100%;
-  height: 32px; /* hoặc auto */
-  margin-bottom: 1rem; /* khoảng cách với nội dung phía dưới */
+  display: inline-block;
+  width: auto;
+  max-width: 220px;
+  height: 24px;
+  margin: 4px 0;
+  transform: scale(0.85);
+  transform-origin: top right;
 }
