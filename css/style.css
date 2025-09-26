@@ -12,7 +12,7 @@ body {
 
 /*--------Link social--------*/
 .container {
-  position: relative; /* rất quan trọng để .social-links bám theo container */
+  position: relative;
   max-width: 600px;
   width: 100%;
   padding: 1rem;
@@ -20,16 +20,9 @@ body {
   padding-top: 3rem;
 }
 
-.header-row {
-  display: flex;
-  justify-content: space-between; /* ngôn ngữ bên trái, social bên phải */
-  align-items: center;            /* căn đều theo chiều cao */
-  margin-bottom: 1rem;            /* khoảng cách với nội dung bên dưới */
-}
-
 .social-links {
   position: absolute;
-  top: 15px;
+  top: 3rem;
   right: 15px;  /* góc phải trong container */
 }
 
