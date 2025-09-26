@@ -1,29 +1,7 @@
-.container {
-  position: relative; /* để con absolute bám theo */
-}
-
-#btc-ticker {
+.coingecko-container {
   position: absolute;
   top: 0;
   right: 0;
-  background: #111827;
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 6px;
   font-size: 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  z-index: 10;
 }
-
-#btc-ticker svg {
-  width: 14px;
-  height: 14px;
-}
-
-#btc-price {
-  font-weight: 600;
-}
-
-#btc-change.up { color: #4ade80; }
-#btc-change.down { color: #f87171; }
