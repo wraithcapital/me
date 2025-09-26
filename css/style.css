@@ -1,8 +1,104 @@
+/* Toàn bộ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.line-break {
+  display: block;
+  margin: 0.2rem 0; /* khoảng cách nhỏ <br> */
+}
+/* Languages Option */
 body {
+   background: #000;
+   color: #fff;
+   font-family: 'Oswald', sans-serif;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center; /* căn giữa block theo ngang */
+   align-items: flex-start; /* khối nội dung ở trên cùng */
+   padding-top: 2rem;      /* khoảng cách trên */
+
+/* chống copy/select */
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+    
+h1 {
+  font-size: 1rem;
+  line-height: 1.4rem;       /* giảm khoảng cách dòng */
+  margin-bottom: 2rem;
+  text-align: left;
+  font-weight: normal;        /* bỏ in đậm */
+  letter-spacing: normal;     /* giảm khoảng cách giữa chữ */
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  margin: 2rem 0 1rem;
+  text-transform: uppercase;
+  color: #ff6600;
+  letter-spacing: normal;
+ }
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+ }
+
+.links a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+ }
+
+.links a:hover {
+  text-decoration: none;
+
+
+/* Languages Option */
+
+.lang-select {
+  display: flex;
+  flex-direction: column;   /* sắp xếp dọc */
+  align-items: flex-start;  /* căn trái */
+  margin-bottom: 1rem;      /* khoảng cách với nội dung dưới */
+}
+
+.lang-options {
+  display: flex;
+  flex-direction: column;   /* link xuống hàng */
+  gap: 0.2rem;              /* khoảng cách giữa các link */
+}
+
+.lang-label {
+  color: #fff;
+  font-size: 0.7rem;  /* chữ nhỏ */
+  font-style: italic;  /* nghiêng */
+  margin-bottom: 0.3rem; /* khoảng cách */
+}
+
+.lang-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  line-height: 1;
+  font-style: italic;
+}
+
+.lang-link:hover {
+  text-decoration: none;
+}
+
+/* highlight link đang active */
+.lang-link.active {
+  color: #ff6600; /* màu cho trang eng/vie */
+  text-decoration: none; /* không underline mặc định */
 }
 
 .highlight {
