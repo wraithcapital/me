@@ -1,28 +1,23 @@
-/* Đặt ticker bên phải trong container */
-#btc-ticker {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  background: #111827; /* nền tối */
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 12px;
-
-  display: flex;
-  align-items: center;
-  gap: 4px;
+/* file: lang.css */
+.lang-select {
+  text-align: left;       /* căn lề trái, muốn căn giữa đổi thành center */
+  margin-bottom: 1rem;    /* khoảng cách với nội dung bên dưới */
+  font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif; 
+  /* font hỗ trợ emoji, không dùng Oswald */
 }
 
-#btc-ticker svg {
-  width: 14px;
-  height: 14px;
+.lang-link {
+  display: block;         /* xuống dòng */
+  color: #fff;            /* chữ trắng */
+  text-decoration: none;  /* bỏ gạch chân */
+  margin-bottom: 0.5rem;  /* khoảng cách giữa các link */
+  transition: color 0.3s; /* đổi màu mượt khi hover */
 }
 
-#btc-price {
-  font-weight: 600;
+.lang-link:hover {
+  color: #ff6600;         /* chữ nổi cam khi hover */
 }
 
-#btc-change.up { color: #4ade80; }   /* xanh */
-#btc-change.down { color: #f87171; } /* đỏ */
+.lang a:hover {
+  text-decoration: none;
+}
