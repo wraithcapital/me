@@ -139,8 +139,11 @@ h2 {
 /* SOCIAL LINKS */
 .social-links {
   position: absolute;
-  top: 0.5rem;  /* chỉnh cao thấp so với menu ngôn ngữ */
-  right: 15px;   /* góc phải container */
+  right: 15px;
+  top: 0; /* bắt đầu từ trên cùng container */
+  display: flex;
+  gap: 0.5rem;
+  align-items: center; /* căn thẳng theo chiều dọc icon */
 }
 
 .social-links img {
