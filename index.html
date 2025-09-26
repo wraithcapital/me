@@ -134,18 +134,14 @@
       <a href="index.html" class="lang-link active">🇬🇧 English</a>
       <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
     </div>
-    <!-- CoinGecko Ticker -->
-<div class="coingecko-container">
-  <coingecko-coin-ticker-widget 
-    coin-id="bitcoin" 
-    currency="usd" 
-    locale="en"
-    background-color="#111827"
-    font-color="#ffffff"
-    border-color="#111827"
-    width="200">
-  </coingecko-coin-ticker-widget>
-</div>
+    <!-- CoinGecko ticker bar nằm ngang -->
+  <gecko-coin-price-static-headline-widget 
+      locale="en" 
+      dark-mode="true" 
+      outlined="true" 
+      coin-ids="bitcoin,solana,jupiter-exchange-solana" 
+      initial-currency="usd">
+  </gecko-coin-price-static-headline-widget>
     <h1>Hi, my name is <span class="highlight">Wraith</span>
 <span class="line-break">I'm not a Builder, not a Dev, just a lazy person who loves to hibernate and doesn’t want to trade much.
 
@@ -165,10 +161,11 @@
       <a href="https://wraithcapital.github.io/me/eng/journeyintoweb3.html">Journey into Web3</a>
     </div>
   </div>
-  <script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
+  <script src="https://widgets.coingecko.com/gecko-coin-price-static-headline-widget.js"></script>
 </body>
 
 </html>
+
 
 
 
