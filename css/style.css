@@ -142,7 +142,7 @@ h2 {
   right: 15px;
   top: 1rem; /* bắt đầu từ trên cùng container */
   display: flex;
-  gap: 0.5rem;
+  gap: 0.5rem; /* khoảng cách giữa các icon*/
   align-items: center; /* căn thẳng theo chiều dọc icon */
 }
 
