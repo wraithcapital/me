@@ -11,13 +11,21 @@ body {
 }
 
 /*--------Link social--------*/
+.container {
+  position: relative;  /* rất quan trọng */
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
 .social-links {
-  position: fixed;
-  top: 15px;
-  right: 15px;     /* canh góc phải */
-  display: flex;   /* xếp icon ngang */
-  gap: 10px;       /* khoảng cách giữa các logo */
-  z-index: 1000;   /* nổi trên cùng */
+  position: absolute;
+  top: 0;      /* bám lên trên cùng container */
+  right: 0;    /* bám sát mép phải container */
+  display: flex;
+  gap: 0.5rem; /* khoảng cách giữa các logo */
 }
 
 .social-links img {
