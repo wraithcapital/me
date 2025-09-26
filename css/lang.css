@@ -1,6 +1,5 @@
 /* file: lang.css */
 .lang-select {
-  text-align: left;       /* căn lề trái, muốn căn giữa đổi thành center */
   margin-bottom: 1rem;    /* khoảng cách với nội dung bên dưới */
   font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif; 
   /* font hỗ trợ emoji, không dùng Oswald */
