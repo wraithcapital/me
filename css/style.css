@@ -22,8 +22,8 @@ body {
 
 .social-links {
   position: absolute;
-  top: 1rem;
-  right: 50px;  /* góc phải trong container */
+  top: 0rem;
+  right: 15px;  /* góc phải trong container */
 }
 
 .social-links img {
