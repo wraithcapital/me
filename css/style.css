@@ -9,3 +9,24 @@ body {
   color: #ff6600; /* màu bạn muốn */
   font-weight: normal; /* nếu muốn in đậm thêm */
 }
+/*-----------------------------*/
+.social-links {
+  position: fixed;
+  top: 15px;
+  right: 15px;     /* canh góc phải */
+  display: flex;   /* xếp icon ngang */
+  gap: 10px;       /* khoảng cách giữa các logo */
+  z-index: 1000;   /* nổi trên cùng */
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);               /* phóng to nhẹ khi hover */
+  filter: drop-shadow(0 0 5px #ff6600); /* viền sáng cam khi hover */
+}
