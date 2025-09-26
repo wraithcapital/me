@@ -1,7 +1,6 @@
-.coingecko-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 12px;
-  z-index: 10;
+gecko-coin-price-static-headline-widget {
+  display: block;
+  width: 100%;
+  height: 32px; /* hoặc auto */
+  margin-bottom: 1rem; /* khoảng cách với nội dung phía dưới */
 }
