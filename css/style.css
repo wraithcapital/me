@@ -9,7 +9,8 @@ body {
   color: #ff6600; /* màu bạn muốn */
   font-weight: normal; /* nếu muốn in đậm thêm */
 }
-/*-----------------------------*/
+/*--------Link social--------*/
+
 .social-links {
   position: fixed;
   top: 15px;
