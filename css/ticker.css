@@ -1,0 +1,47 @@
+#btc-ticker {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(18,18,20,0.9);
+  color: #e6eef8;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.04);
+  min-width: 120px;
+  max-width: 320px;
+}
+
+#btc-ticker .logo {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#btc-ticker .price {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+#btc-ticker .change {
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.change.up { background: rgba(28,163,82,0.12); color: #1dc071; }
+.change.down { background: rgba(224,54,54,0.09); color: #ff6b6b; }
+
+@media (max-width: 640px) {
+  #btc-ticker { display: none; }
+}
