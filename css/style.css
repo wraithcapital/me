@@ -20,6 +20,13 @@ body {
   padding-top: 3rem;
 }
 
+.header-row {
+  display: flex;
+  justify-content: space-between; /* ngôn ngữ bên trái, social bên phải */
+  align-items: center;            /* căn đều theo chiều cao */
+  margin-bottom: 1rem;            /* khoảng cách với nội dung bên dưới */
+}
+
 .social-links {
   position: absolute;
   top: 15px;
