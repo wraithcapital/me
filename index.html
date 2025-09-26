@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/lang.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="ticker.css">
   <script src="js/anti-copy.js"></script>
   <style>
     .lang-label {
@@ -135,15 +134,18 @@
       <a href="index.html" class="lang-link active">🇬🇧 English</a>
       <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
     </div>
-     <!-- BTC ticker -->
-    <div id="btc-ticker">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <circle cx="16" cy="16" r="16" fill="#f7931a"/>
-        <path d="M18.9 10.7c.9-2.9-1.8-4.4-3.8-4.8l.78-3.15-1.9-.47-.76 3.06c-.5-.12-1.02-.22-1.53-.32l.78-3.15-1.9-.47-.78 3.15c-.41-.09-.82-.18-1.22-.27L8.1 6.2l1.15.28-.74 2.97c.43.11.86.2 1.29.3l-.78 3.15 1.9.47.78-3.15c.51.1 1.03.2 1.55.3l-.78 3.15 1.9.47.78-3.15c3.12.54 5.56-.98 6.45-3.94z" fill="#fff"/>
-      </svg>
-      <span id="btc-price">--</span>
-      <span id="btc-change">--%</span>
-    </div>
+    <!-- CoinGecko Ticker -->
+<div class="coingecko-container">
+  <coingecko-coin-ticker-widget 
+    coin-id="bitcoin" 
+    currency="usd" 
+    locale="en"
+    background-color="#111827"
+    font-color="#ffffff"
+    border-color="#111827"
+    width="200">
+  </coingecko-coin-ticker-widget>
+</div>
     <h1>Hi, my name is <span class="highlight">Wraith</span>
 <span class="line-break">I'm not a Builder, not a Dev, just a lazy person who loves to hibernate and doesn’t want to trade much.
 
@@ -163,10 +165,11 @@
       <a href="https://wraithcapital.github.io/me/eng/journeyintoweb3.html">Journey into Web3</a>
     </div>
   </div>
-  <script src="ticker.js"></script>
+  <script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
 </body>
 
 </html>
+
 
 
 
