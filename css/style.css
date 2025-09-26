@@ -1,4 +1,6 @@
-/* Toàn bộ */
+/*------------------------------------*/
+/* RESET & GLOBAL STYLES */
+/*------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -9,31 +11,34 @@
   display: block;
   margin: 0.2rem 0; /* khoảng cách nhỏ <br> */
 }
-/* Languages Option */
-body {
-   background: #000;
-   color: #fff;
-   font-family: 'Oswald', sans-serif;
-   min-height: 100vh;
-   display: flex;
-   justify-content: center; /* căn giữa block theo ngang */
-   align-items: flex-start; /* khối nội dung ở trên cùng */
-   padding-top: 2rem;      /* khoảng cách trên */
 
-/* chống copy/select */
-   user-select: none;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
+/*------------------------------------*/
+/* BODY & BASE STYLES */
+/*------------------------------------*/
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* căn giữa container theo ngang */
+  align-items: flex-start; /* khối nội dung ở trên cùng */
+  padding-top: 2rem;
+
+  /* chống copy/select */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
-    
+
 h1 {
   font-size: 1rem;
-  line-height: 1.4rem;       /* giảm khoảng cách dòng */
+  line-height: 1.4rem;
   margin-bottom: 2rem;
   text-align: left;
-  font-weight: normal;        /* bỏ in đậm */
-  letter-spacing: normal;     /* giảm khoảng cách giữa chữ */
+  font-weight: normal;
+  letter-spacing: normal;
 }
 
 h2 {
@@ -43,98 +48,99 @@ h2 {
   text-transform: uppercase;
   color: #ff6600;
   letter-spacing: normal;
- }
+}
 
 .links {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
- }
+}
 
 .links a {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
- }
+}
 
 .links a:hover {
   text-decoration: none;
-
-
-/* Languages Option */
-
-.lang-select {
-  font-family: 'Oswald', sans-serif; /* chữ bình thường */
-  display: flex;
-  flex-direction: column;   /* sắp xếp dọc */
-  align-items: flex-start;  /* căn trái */
-  margin-bottom: 1rem;      /* khoảng cách với nội dung dưới */
 }
 
-.lang-options {
+/*------------------------------------*/
+/* LANG SELECT / MENU NGÔN NGỮ */
+/*------------------------------------*/
+.lang-select {
+  font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif; /* hỗ trợ emoji */
   display: flex;
-  flex-direction: column;   /* link xuống hàng */
-  gap: 0.2rem;              /* khoảng cách giữa các link */
+  flex-direction: column;   /* link xếp dọc */
+  align-items: flex-start;  /* căn trái */
+  margin-bottom: 1rem;
 }
 
 .lang-label {
   color: #fff;
-  font-size: 0.4rem;  /* chữ nhỏ */
-  font-style: italic;  /* nghiêng */
-  margin-bottom: 0.3rem; /* khoảng cách */
+  font-size: 0.7rem;  /* chữ không quá nhỏ */
+  font-style: italic;
+  margin-bottom: 0.3rem;
 }
 
 .lang-link {
-  display: block;         /* xuống dòng */
+  display: block; /* xuống dòng */
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.4rem;
+  font-size: 0.7rem;
   line-height: 1;
-  margin-bottom: 0.5rem;  /* khoảng cách giữa các link */
-  transition: color 0.3s; /* đổi màu mượt khi hover */
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
   font-style: italic;
 }
 
 .lang-link:hover {
-  color: #ff6600;         /* chữ nổi cam khi hover */
-  text-decoration: none;
+  color: #ff6600;
 }
 
-/* highlight link đang active */
 .lang-link.active {
-  color: #ff6600; /* màu cho trang eng/vie */
-  text-decoration: none; /* không underline mặc định */
+  color: #ff6600;
 }
 
+/*------------------------------------*/
+/* HIGHLIGHT TEXT */
 .highlight {
-  color: #ff6600; /* màu bạn muốn */
-  font-weight: normal; /* nếu muốn in đậm thêm */
+  color: #ff6600;
+  font-weight: normal;
 }
 
-/* Container chung */
+/*------------------------------------*/
+/* CONTAINER CHUNG */
 .container {
   position: relative;       /* để social-links căn theo container */
-  max-width: 500px;
+  max-width: 500px;         /* nhỏ lại như cũ */
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  padding-top: 1rem;        /* đẩy nội dung xuống */
+  padding-top: 1rem;
 }
 
-/* Responsive mobile */
+/*------------------------------------*/
+/* RESPONSIVE MOBILE */
 @media screen and (max-width: 600px) {
   .container {
     max-width: 100%;
     padding: 1rem;
     padding-top: 1rem;
   }
-}
-/*--------Link social--------*/
 
+  .lang-select {
+    align-items: flex-start;
+  }
+}
+
+/*------------------------------------*/
+/* SOCIAL LINKS */
 .social-links {
   position: absolute;
-  top: 1rem;
-  right: 15px;  /* góc phải trong container */
+  top: 0.5rem;  /* chỉnh cao thấp so với menu ngôn ngữ */
+  right: 15px;   /* góc phải container */
 }
 
 .social-links img {
@@ -145,6 +151,6 @@ h2 {
 }
 
 .social-links img:hover {
-  transform: scale(1.1);               /* phóng to nhẹ khi hover */
-  filter: drop-shadow(0 0 5px #ff6600); /* viền sáng cam khi hover */
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #ff6600);
 }
