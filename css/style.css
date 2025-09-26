@@ -10,15 +10,25 @@ body {
   font-weight: normal; /* nếu muốn in đậm thêm */
 }
 
-/*--------Link social--------*/
+/* Container chung */
 .container {
-  position: relative;
+  position: relative;       /* để social-links căn theo container */
   max-width: 600px;
   width: 100%;
-  padding: 1rem;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem;
+  padding-top: 3rem;        /* đẩy nội dung xuống */
 }
+
+/* Responsive mobile */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+}
+/*--------Link social--------*/
 
 .social-links {
   position: absolute;
