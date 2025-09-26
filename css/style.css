@@ -114,7 +114,7 @@ h2 {
 /* CONTAINER CHUNG */
 .container {
   position: relative;       /* để social-links căn theo container */
-  max-width: 500px;         /* nhỏ lại như cũ */
+  max-width: 650px;         /* nhỏ lại như cũ */
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
