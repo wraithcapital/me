@@ -79,7 +79,7 @@ h2 {
 
 .lang-label {
   color: #fff;
-  font-size: 0.7rem;  /* chữ nhỏ */
+  font-size: 0.4rem;  /* chữ nhỏ */
   font-style: italic;  /* nghiêng */
   margin-bottom: 0.3rem; /* khoảng cách */
 }
@@ -88,7 +88,7 @@ h2 {
   display: block;         /* xuống dòng */
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.4rem;
   line-height: 1;
   margin-bottom: 0.5rem;  /* khoảng cách giữa các link */
   transition: color 0.3s; /* đổi màu mượt khi hover */
@@ -116,7 +116,7 @@ h2 {
   position: relative;       /* để social-links căn theo container */
   max-width: 500px;
   width: 100%;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 1rem;
   padding-top: 1rem;        /* đẩy nội dung xuống */
 }
