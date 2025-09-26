@@ -21,10 +21,10 @@ body {
    padding-top: 2rem;      /* khoảng cách trên */
 
 /* chống copy/select */
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
 }
     
 h1 {
@@ -64,6 +64,7 @@ h2 {
 /* Languages Option */
 
 .lang-select {
+  font-family: 'Oswald', sans-serif; /* chữ bình thường */
   display: flex;
   flex-direction: column;   /* sắp xếp dọc */
   align-items: flex-start;  /* căn trái */
@@ -84,14 +85,18 @@ h2 {
 }
 
 .lang-link {
+  display: block;         /* xuống dòng */
   color: #ffffff;
   text-decoration: none;
   font-size: 0.7rem;
   line-height: 1;
+  margin-bottom: 0.5rem;  /* khoảng cách giữa các link */
+  transition: color 0.3s; /* đổi màu mượt khi hover */
   font-style: italic;
 }
 
 .lang-link:hover {
+  color: #ff6600;         /* chữ nổi cam khi hover */
   text-decoration: none;
 }
 
@@ -109,9 +114,9 @@ h2 {
 /* Container chung */
 .container {
   position: relative;       /* để social-links căn theo container */
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 1rem;
   padding-top: 1rem;        /* đẩy nội dung xuống */
 }
