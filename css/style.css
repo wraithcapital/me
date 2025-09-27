@@ -34,7 +34,6 @@ body {
 
 h1 {
   font-size: 1.1rem;
-  line-height: 1.4rem;
   margin-bottom: 2rem;
   text-align: left;
   font-weight: normal;
@@ -42,13 +41,13 @@ h1 {
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
   font-size: 1.1rem;
   margin: 2rem 0 1rem;
   text-transform: uppercase;
   color: #ff6600;
   letter-spacing: normal;
 }
+
 
 .links {
   display: flex;
