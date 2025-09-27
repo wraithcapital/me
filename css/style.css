@@ -42,7 +42,7 @@ h1 {
 
 h2 {
   font-size: 1.1rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   color: #ff6600;
   letter-spacing: normal;
@@ -52,7 +52,7 @@ h2 {
 .links {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
 .links a {
