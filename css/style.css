@@ -104,7 +104,7 @@ h2 {
   color: #ff6600;
 }
 
-.lang-select .fi {
+.lang-link .fi {
   width: 20px;        /* chiều ngang cờ */
   height: 10px;       /* chiều cao cờ */
   border-radius: 3px; /* bo góc lá cờ */
