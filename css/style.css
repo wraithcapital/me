@@ -106,8 +106,8 @@ h2 {
 
 .lang-link .fi {
   width: 20px;        /* chiều ngang cờ */
-  height: 10px;       /* chiều cao cờ */
-  border-radius: 3px; /* bo góc lá cờ */
+  height: 12px;       /* chiều cao cờ */
+  border-radius: 4px; /* bo góc lá cờ */
 }
 
 /*------------------------------------*/
