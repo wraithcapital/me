@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center; /* căn giữa container theo ngang */
   align-items: flex-start; /* khối nội dung ở trên cùng */
-  padding-top: 2rem;
+  padding-top: 1rem;
 
   /* chống copy/select */
   user-select: none;
@@ -133,8 +133,8 @@ h2 {
 @media screen and (max-width: 600px) {
   .container {
     max-width: 100%;
-    padding: 0.5rem;
-    padding-top: 0.5rem;
+    padding: 1rem;
+    padding-top: 1rem;
   }
 
   .lang-select {
