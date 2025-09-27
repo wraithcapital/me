@@ -71,7 +71,7 @@ h2 {
 /* LANG SELECT / MENU NGÔN NGỮ */
 /*------------------------------------*/
 .lang-select {
-  font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif; /* hỗ trợ emoji */
+  font-family: 'Oswald', 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif; /* hỗ trợ emoji */
   display: flex;
   flex-direction: column;   /* link xếp dọc */
   align-items: flex-start;  /* căn trái */
