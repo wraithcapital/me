@@ -56,6 +56,7 @@ h2 {
 }
 
 .links a {
+  display: block;        /* mỗi a nằm 1 dòng */
   font-size: 1.1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
