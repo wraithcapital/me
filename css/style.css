@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center; /* căn giữa container theo ngang */
   align-items: flex-start; /* khối nội dung ở trên cùng */
-  padding-top: 0,5rem;
+  padding-top: 0.5rem;
 
   /* chống copy/select */
   user-select: none;
@@ -135,7 +135,7 @@ p {
 }
 
 /*------------------------------------*/
-/* CONTAINER CHUNG */
+/* CONTAINER */
 .container {
   position: relative;       /* để social-links căn theo container */
   max-width: 650px;         /* nhỏ lại như cũ */
@@ -151,7 +151,7 @@ p {
   .container {
     max-width: 100%;
     padding: 1rem;
-    padding-top: 0,5rem;
+    padding-top: 0.5rem;
   }
 
   .lang-select {
