@@ -67,6 +67,23 @@ h2 {
   text-decoration: none;
 }
 
+p {
+      font-size: 1rem;
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: #ff6600;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+
 /*------------------------------------*/
 /* LANG SELECT / MENU NGÔN NGỮ */
 /*------------------------------------*/
