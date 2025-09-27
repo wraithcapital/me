@@ -7,155 +7,50 @@
   <title>Wraith</title>
   <link rel="icon" href="favicon-32x32.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css" >
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/lang.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/anti-copy.js"></script>
-  <style>
-    .lang-label {
-      color: #fff;
-      font-size: 0.7rem;  /* chữ nhỏ */
-      font-style: italic;  /* nghiêng */
-      margin-bottom: 0.3rem; /* khoảng cách */
-    }
-
-    .line-break {
-      display: block;
-      margin: 0.2rem 0; /* khoảng cách nhỏ <br> */
-    }
-
-    .lang-select {
-      display: flex;
-      flex-direction: column;   /* sắp xếp dọc */
-      align-items: flex-start;  /* căn trái */
-      margin-bottom: 1rem;      /* khoảng cách với nội dung dưới */
-    }
-    .lang-options {
-      display: flex;
-      flex-direction: column;   /* link xuống hàng */
-      gap: 0.2rem;             /* khoảng cách giữa các link */
-    } 
-
-    .lang-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 0.7rem;
-      line-height: 1;
-      font-style: italic;
-    }
-
-    .lang-link:hover {
-      text-decoration: none;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* highlight link đang active */
-    .lang-link.active {
-      color: #ff6600; /* màu cho trang eng/vie */
-      text-decoration: none; /* không underline mặc định */
-    }
-
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Oswald', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center; /* căn giữa block theo ngang */
-      align-items: flex-start; /* khối nội dung ở trên cùng */
-      padding-top: 2rem;      /* khoảng cách trên */
-    }
-    
-      /* CSS gốc cho desktop */
-    .container {
-      position: relative;
-      max-width: 600px;   /* giới hạn chiều rộng trên desktop */
-      width: 100%;
-      padding: 1rem;
-      margin: 0 auto;     /* căn giữa desktop */
-      padding-top: 3rem; /* đẩy toàn bộ nội dung xuống */
-    }
-
-      /* CSS cho mobile */
-      @media screen and (max-width: 600px) {
-    .container {
-      max-width: 100%;  /* full width trên điện thoại */
-      padding: 1rem;
-      margin: 0;        /* bỏ margin 2 bên */
-      padding-top: 0rem; /* đẩy toàn bộ nội dung xuống */
-    }
-  }
-
-    h1 {
-      font-size: 1rem;
-      line-height: 1.4rem;       /* giảm khoảng cách dòng */
-      margin-bottom: 2rem;
-      text-align: left;
-      font-weight: normal;        /* bỏ in đậm */
-      letter-spacing: normal;     /* giảm khoảng cách giữa chữ */
-    }
-
-    h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1rem;
-      margin: 2rem 0 1rem;
-      text-transform: uppercase;
-      color: #ff6600;
-      letter-spacing: normal;
-}
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .links a {
-      font-size: 1rem;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .links a:hover {
-      text-decoration: none;
-    }
-  </style>
 </head>
+  
 <body>
   <div class="container">
-    <!-- Chèn chọn ngôn ngữ ngay đây -->
+    <!-- Chèn chọn ngôn ngữ -->
     <div class="lang-select">
       <span class="lang-label">Select language:</span>
-      <a href="index.html" class="lang-link active">🇬🇧 English</a>
-      <a href="index-vie.html" class="lang-link">🇻🇳 Vietnamese</a>
+      <a href="index.html" class="lang-link active"><span class="fi fi-gb"></span> English</a>
+      <a href="index-vie.html" class="lang-link"><span class="fi fi-vn"></span> Vietnamese</a>
     </div>
-    <h1>Hi, my name is <span class="highlight">Wraith</span>
-<span class="line-break">I'm not a Builder, not a Dev, just a lazy person who loves to hibernate and doesn’t want to trade much.
-
-<span class="line-break">Awakened after years of sleeping on Bitcoin and Ethereum. I wake up because of Solana and believe <a href="https://jup.ag" style="color:#ff6600; text-decoration:none;" target="_blank">Jupiter</a> will change the way how people interact with DeFi.
-
+    <!-- Link Social -->
+    <div class="social-links">
+      <a href="https://t.me/wraithdotsol" target="_blank">
+        <img src="tg.png" alt="Telegram" width="28" height="28">
+      </a>
+    </div>
+    <h1>I'm not a Builder, not a Dev, just a lazy person who loves to hibernate and doesn’t want to trade much.
+<span class="line-break">After many years of sleeping on Bitcoin and Ethereum, I awakened to the astonishing speed of Solana and believe that one day, <a href="https://jup.ag" style="color:#ff6600; text-decoration:none;" target="_blank">Jupiter</a> will change the way people interact with DeFi.
    </h1>
 
-    <h2>Perspective on money</h2>
+    <h2>Thoughts on Money</h2>
     <div class="links">
-      <a href="https://wraithcapital.github.io/me/eng/satoshiandthebitcoingenesis.html">Satoshi and the Bitcoin Genesis</a>
-      <a href="https://wraithcapital.github.io/me/eng/thefearofbanks.html">The fear of Banks</a>
+      <a href="https://wraithcapital.github.io/me/eng/satoshiandthebitcoingenesis.html">Satoshi and the Bitcoin genesis</a>
+      <a href="https://wraithcapital.github.io/me/eng/banksandthedefinightmare.html">Banks and the DeFi nightmare</a>
     </div>
 
-    <h2>About me</h2>
+    <h2>Blockchain Journey</h2>
     <div class="links">
       <a href="https://wraithcapital.github.io/me/eng/timeline.html">Timeline</a>
-      <a href="https://wraithcapital.github.io/me/eng/adventureintoweb3.html">Adventure into Web3</a>
+      <a href="https://wraithcapital.github.io/me/eng/web3adventure.html">Web3 Adventure</a>
     </div>
-  </div>
+    
+      <h2>About Jupiter </h2>
+    <div class="links">
+      <a href="https://wraithcapital.github.io/me/vie/everythingaboutjupiterexchange.html">Everything about Jupiter Exchange</a>
+    </div>
+    
 </body>
-
 </html>
+
 
 
 
