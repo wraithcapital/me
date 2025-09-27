@@ -106,8 +106,8 @@ h2 {
 
 .lang-select .fi {
   width: 20px;        /* chiều ngang cờ */
-  height: 15px;       /* chiều cao cờ */
-  border-radius: 5px; /* bo góc lá cờ */
+  height: 10px;       /* chiều cao cờ */
+  border-radius: 3px; /* bo góc lá cờ */
 }
 
 /*------------------------------------*/
