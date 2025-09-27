@@ -81,9 +81,11 @@ p {
   text-decoration: none;
 }
 
-    .back-link:hover {
-      text-decoration: underline;
-    }
+.back-link:hover {
+  text-decoration: none;
+}
+
+
 /*------------------------------------*/
 /* LANG SELECT / MENU NGÔN NGỮ */
 /*------------------------------------*/
