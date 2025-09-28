@@ -205,7 +205,7 @@ p {
   flex-shrink: 0; /* không bị co lại */
   opacity: 0.4;
 
-  osition: fixed;   /* luôn dính */
+  position: fixed;   /* luôn dính */
   bottom: 0;         /* sát mép dưới */
   left: 0;
 }
