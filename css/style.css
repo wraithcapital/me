@@ -204,12 +204,14 @@ p {
   margin-top: 0,5rem; /* cách nội dung phía trên */
   flex-shrink: 0; /* không bị co lại */
   opacity: 0.2;
+  
 }
 
 .site-footer a {
   color: #ff6600;
   text-decoration: none;
   transition: color 0.3s;
+  gap: 0.2 rem;
 }
 
 .site-footer a:hover {
