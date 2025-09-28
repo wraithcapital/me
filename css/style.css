@@ -87,6 +87,9 @@ p {
   text-decoration: none;
 }
 
+.main-content {
+  flex: 1; /* phần nội dung chiếm hết không gian còn lại */
+}
 
 /*------------------------------------*/
 /* LANG SELECT / MENU NGÔN NGỮ */
@@ -184,4 +187,34 @@ p {
 .social-links img:hover {
   transform: scale(1.1);
   filter: drop-shadow(0 0 5px #ff6600);
+}
+
+/*------------------------------------*/
+/* FOOTER */
+.site-footer {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: #111; /* màu tối */
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin-top: 3rem; /* cách nội dung phía trên */
+  flex-shrink: 0; /* không bị co lại */
+}
+
+.site-footer a {
+  color: #ff6600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #ff6600;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
 }
