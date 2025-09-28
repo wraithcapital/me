@@ -196,6 +196,7 @@ p {
   padding: 1rem 0rem;
   background-color: #000; /* màu tối */
   color: #fff;
+  gap: 0,2rem;
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 1rem;
@@ -211,7 +212,6 @@ p {
   color: #ff6600;
   text-decoration: none;
   transition: color 0.3s;
-  gap: 0.2 rem;
 }
 
 .site-footer a:hover {
