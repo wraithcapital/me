@@ -194,7 +194,7 @@ p {
 .site-footer {
   width: 100%;
   padding: 1rem 1.5rem;
-  background-color: #111; /* màu tối */
+  background-color: #000; /* màu tối */
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 0.3rem;
@@ -202,6 +202,7 @@ p {
   letter-spacing: 0.2px;
   margin-top: 3rem; /* cách nội dung phía trên */
   flex-shrink: 0; /* không bị co lại */
+  opacity: 0.6;
 }
 
 .site-footer a {
