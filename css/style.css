@@ -193,11 +193,11 @@ p {
 /* FOOTER */
 .site-footer {
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 0,5rem 0,5rem;
   background-color: #000; /* màu tối */
   color: #fff;
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: normal;
   font-size: 1rem;
   text-align: center;
   letter-spacing: 0.2px;
