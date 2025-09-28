@@ -204,6 +204,10 @@ p {
   margin-top: 3rem; /* cách nội dung phía trên */
   flex-shrink: 0; /* không bị co lại */
   opacity: 0.4;
+
+  osition: fixed;   /* luôn dính */
+  bottom: 0;         /* sát mép dưới */
+  left: 0;
 }
 
 .site-footer a {
