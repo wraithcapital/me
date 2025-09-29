@@ -13,6 +13,7 @@
     .marquee {
       display: flex;
       padding-right: 0;
+      justify-content: flex-start
       
     }
     @keyframes scroll-left {
