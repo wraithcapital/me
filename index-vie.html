@@ -17,7 +17,8 @@
   
 <body>
   <div class="container">
-   <div class="ticker-bar" id="ticker-bar">
+   <!-- TickerBar -->
+<div class="ticker-bar" id="ticker-bar">
   Loading...
 </div>
 
@@ -43,8 +44,10 @@ async function loadPrices() {
   }
 }
 
+// Cập nhật ngay khi load và lặp lại mỗi 15 giây
 loadPrices();
 setInterval(loadPrices, 15000);
+
 </script>
     <!-- Chèn chọn ngôn ngữ -->
     <div class="lang-select">
