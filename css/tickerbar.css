@@ -1,8 +1,8 @@
-    .marquee-wrap {
-      position: absolute; 
+    .marquee-wrap { 
       display: flex;
+      justify-content: flex-end;
       background: #000000;
-      right: 5rem;
+      right: 4rem;
       overflow: hidden;
       box-sizing: border-box;
       padding: 30px 0;
