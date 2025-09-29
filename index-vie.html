@@ -17,16 +17,28 @@
   
 <body>
   <div class="container">
-    <gecko-coin-price-marquee-widget 
-  class="ticker-fixed"
-  coin-ids="bitcoin"
-  dark-mode="true"
-  currency="usd"
-  locale="en"
-  transparent-background="true"
-  background-color="#000000"
-  font-color="#ffffff">
-    </gecko-coin-price-marquee-widget>
+    <!-- Tickerbar -->
+  <div class="ticker-bar">
+    <div id="ticker" class="ticker-content">Loading...</div>
+  </div>
+
+  <script>
+  async function loadPrices() {
+    const res = await fetch("https://price.jup.ag/v6/price?ids=BTC,ETH,SOL,JUP");
+    const data = await res.json();
+    const prices = data.data;
+
+    let html = `
+      BTC: $${prices.BTC.price.toFixed(0)} &nbsp;&nbsp;
+      
+    `;
+
+    document.getElementById("ticker").innerHTML = html;
+  }
+
+  loadPrices();
+  setInterval(loadPrices, 30000); // 30s update
+  </script>
     <!-- Chèn chọn ngôn ngữ -->
     <div class="lang-select">
       <span class="lang-label">Chọn ngôn ngữ:</span>
