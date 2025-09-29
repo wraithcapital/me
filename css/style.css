@@ -192,6 +192,7 @@ p {
 /*------------------------------------*/
 /* FOOTER */
 .site-footer {
+  display: inline-block; /* co theo nội dung */
   width: 100%;
   padding: 1rem 0rem;
   background-color: #000;
