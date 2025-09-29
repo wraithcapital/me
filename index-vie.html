@@ -17,23 +17,28 @@
   
 <body>
   <div class="container">
-    <!-- Tickerbar -->
+   <!-- Tickerbar -->
   <div class="ticker-bar">
     <div id="ticker" class="ticker-content">Loading...</div>
   </div>
 
   <script>
   async function loadPrices() {
-    const res = await fetch("https://price.jup.ag/v6/price?ids=BTC,ETH,SOL,JUP");
-    const data = await res.json();
-    const prices = data.data;
+    try {
+      const res = await fetch("https://price.jup.ag/v6/price?ids=BTC");
+      const data = await res.json();
+      const prices = data.data;
 
-    let html = `
-      BTC: $${prices.BTC.price.toFixed(0)} &nbsp;&nbsp;
-      
-    `;
+      let html = `
+        BTC: $${prices.BTC.price.toFixed(0)} &nbsp;&nbsp;
+        
+      `;
 
-    document.getElementById("ticker").innerHTML = html;
+      document.getElementById("ticker").innerHTML = html;
+    } catch (e) {
+      document.getElementById("ticker").innerHTML = "Lỗi tải giá!";
+      console.error(e);
+    }
   }
 
   loadPrices();
