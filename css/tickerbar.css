@@ -32,3 +32,4 @@ gecko-coin-price-marquee-widget {
 /* chỉ còn ký hiệu (BTC, SOL, ETH) */
   gecko-coin-price-marquee-widget::part(name) {
     display: none !important;
+}
