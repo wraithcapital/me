@@ -5,7 +5,7 @@ gecko-coin-price-marquee-widget {
   display: block;
   width: 100%;
   padding: 5px 0;
-  background: #000 !important;   /* nền tối */
+  background: #000  /* nền tối */
   color: #fff;        /* chữ trắng */
   font-size: 14px;
   border-bottom: 1px solid #333;
@@ -18,7 +18,7 @@ gecko-coin-price-marquee-widget {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background: #000 !important;  /* nền đen */
+  background: #000 /* nền đen */
   color: #fff !important;       /* chữ trắng */
   font-size: 14px;
   padding: 4px 0;
@@ -26,10 +26,10 @@ gecko-coin-price-marquee-widget {
 
 /* Ẩn dòng "Powered by CoinGecko" */
   gecko-coin-price-marquee-widget::part(footer) {
-    display: none !important;
+    display: none
 }
 
 /* chỉ còn ký hiệu (BTC, SOL, ETH) */
   gecko-coin-price-marquee-widget::part(name) {
-    display: none !important;
+    display: none
 }
