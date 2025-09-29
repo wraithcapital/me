@@ -17,37 +17,28 @@
   
 <body>
   <div class="container">
-   <!-- TickerBar -->
-<div class="ticker-bar" id="ticker-bar">
-  Loading...
-</div>
-
+   <div class="ticker-bar">
+    <img id="btc-logo" src="" alt="BTC">
+    <span id="btc-price">Loading...</span>
+   </div>
+ 
 <script>
-const coins = ["bitcoin","ethereum","solana","jupiter-exchange"];
-
-async function loadPrices() {
+async function fetchBTC() {
   try {
-    const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coins.join(',')}`);
+    const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
     const data = await res.json();
-
-    const html = data.map(c => `
-      <div class="ticker-item">
-        <img src="${c.image}" alt="${c.symbol}">
-        <span>${c.symbol.toUpperCase()}: $${c.current_price >= 1 ? c.current_price.toFixed(2) : c.current_price.toFixed(4)}</span>
-      </div>
-    `).join('');
-
-    document.getElementById("ticker-bar").innerHTML = html;
-  } catch(e) {
-    document.getElementById("ticker-bar").innerHTML = "Lỗi tải giá!";
+    const price = data.bitcoin.usd;
+    document.getElementById('btc-price').textContent = `BTC $${price.toLocaleString()}`;
+    document.getElementById('btc-logo').src = 'https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png';
+  } catch (e) {
     console.error(e);
+    document.getElementById('btc-price').textContent = 'Error';
   }
 }
 
-// Cập nhật ngay khi load và lặp lại mỗi 15 giây
-loadPrices();
-setInterval(loadPrices, 15000);
-
+// Cập nhật mỗi 10 giây
+fetchBTC();
+setInterval(fetchBTC, 10000);
 </script>
     <!-- Chèn chọn ngôn ngữ -->
     <div class="lang-select">
