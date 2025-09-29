@@ -65,7 +65,7 @@ h2 {
 }
 
 .links a:hover {
-  color: #ff6600;
+  color: #f7931A;
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ p {
   display: inline-block;
   margin-bottom: 2rem;
   font-size: 1rem;
-  color: #ff6600;
+  color: #f7931A;
   text-decoration: none;
 }
 
@@ -121,11 +121,11 @@ p {
 }
 
 .lang-link:hover {
-  color: #ff6600;
+  color: #f7931A;
 }
 
 .lang-link.active {
-  color: #ff6600;
+  color: #f7931A;
 }
 
 .lang-link .fi {
@@ -137,7 +137,7 @@ p {
 /*------------------------------------*/
 /* HIGHLIGHT TEXT */
 .highlight {
-  color: #ff6600;
+  color: #f7931A;
   font-weight: normal;
 }
 
@@ -209,13 +209,13 @@ p {
 }
 
 .site-footer a {
-  color: #ff6600;
+  color: #f7931A;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .site-footer a:hover {
-  color: #ff6600;
+  color: #f7931A;
 }
 
 .footer-links {
