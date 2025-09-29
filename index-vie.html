@@ -10,11 +10,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css" >
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="ticker.css">
   <script src="js/anti-copy.js"></script>
 </head>
   
 <body>
   <div class="container">
+    <gecko-coin-price-marquee-widget 
+  class="ticker-fixed"
+  coin-ids="bitcoin,solana,jupiter-exchange"
+  currency="usd"
+  locale="en"
+  background-color="#000000"
+  font-color="#ffffff">
+    </gecko-coin-price-marquee-widget>
     <!-- Chèn chọn ngôn ngữ -->
     <div class="lang-select">
       <span class="lang-label">Chọn ngôn ngữ:</span>
