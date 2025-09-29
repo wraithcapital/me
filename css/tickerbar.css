@@ -1,0 +1,20 @@
+/* ticker.css */
+
+/* Định dạng chung cho tickerbar */
+gecko-coin-price-marquee-widget {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  background: #000;   /* nền tối */
+  color: #fff;        /* chữ trắng */
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+}
+
+/* Nếu muốn ticker dính trên cùng khi cuộn */
+.ticker-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
