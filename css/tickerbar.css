@@ -39,12 +39,8 @@
 
     .price {
       font-weight: bold;
-      
+      color: #fff;
     }
-
-  .price.up { color: #4caf50; }
-  .price.down { color: #f44336; }
-    
 
 
     .change.up { color: #4caf50; }   /* màu xanh nếu tăng */
