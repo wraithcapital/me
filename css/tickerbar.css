@@ -1,11 +1,12 @@
     .marquee-wrap { 
       display: flex;
       justify-content: flex-end;
+      margin-left: 1rem;
       background: #000000;
-      right: 4rem;
+      right: 3rem;
       overflow: hidden;
       box-sizing: border-box;
-      padding: 4rem 0;
+      padding: 10px 0;
       border-bottom: 1px solid rgba(255,255,255,0.1);
       
     }
