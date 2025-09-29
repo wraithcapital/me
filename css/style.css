@@ -11,6 +11,12 @@
   display: block;
   margin: 0.2rem 0; /* khoảng cách nhỏ <br> */
 }
+
+/* HIGHLIGHT TEXT */
+.highlight {
+  color: #f7931A;
+  font-weight: normal;
+}
  
 /*------------------------------------*/
 /* BODY & BASE STYLES */
@@ -132,13 +138,6 @@ p {
   width: 20px;        /* chiều ngang cờ */
   height: 13px;       /* chiều cao cờ */
   border-radius: 4px; /* bo góc lá cờ */
-}
-
-/*------------------------------------*/
-/* HIGHLIGHT TEXT */
-.highlight {
-  color: #f7931A;
-  font-weight: normal;
 }
 
 /*------------------------------------*/
