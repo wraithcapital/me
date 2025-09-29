@@ -17,27 +17,35 @@
   
 <body>
   <div class="container">
-   <div class="ticker-bar">
-    <div id="ticker" class="ticker-content">Loading...</div>
-   </div>
+   <div class="ticker-bar" id="ticker-bar">
+  Loading...
+</div>
 
-  <script>
-  const coins = ["bitcoin", "ethereum", "solana"];
-  async function loadPrices() {
-    try {
-      const res = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${coins.join(',')}&vs_currencies=usd`);
-      const data = await res.json();
-      const html = coins.map(c => `${c.toUpperCase()}: $${data[c].usd}`).join(' | ');
-      document.getElementById("ticker").innerHTML = html;
-    } catch(e) {
-      document.getElementById("ticker").innerHTML = "Lỗi tải giá!";
-      console.error(e);
-    }
+<script>
+const coins = ["bitcoin","ethereum","solana","jupiter-exchange"];
+
+async function loadPrices() {
+  try {
+    const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coins.join(',')}`);
+    const data = await res.json();
+
+    const html = data.map(c => `
+      <div class="ticker-item">
+        <img src="${c.image}" alt="${c.symbol}">
+        <span>${c.symbol.toUpperCase()}: $${c.current_price >= 1 ? c.current_price.toFixed(2) : c.current_price.toFixed(4)}</span>
+      </div>
+    `).join('');
+
+    document.getElementById("ticker-bar").innerHTML = html;
+  } catch(e) {
+    document.getElementById("ticker-bar").innerHTML = "Lỗi tải giá!";
+    console.error(e);
   }
+}
 
-  loadPrices();
-  setInterval(loadPrices, 30000); // cập nhật 30s
-  </script>
+loadPrices();
+setInterval(loadPrices, 15000);
+</script>
     <!-- Chèn chọn ngôn ngữ -->
     <div class="lang-select">
       <span class="lang-label">Chọn ngôn ngữ:</span>
