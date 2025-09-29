@@ -1,5 +1,5 @@
     .marquee-wrap {
-      postion: relative;
+      postion: absolute;
       display: flex;
       justify-content: flex-end;
       background: none !important;
