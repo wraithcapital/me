@@ -11,10 +11,20 @@ gecko-coin-price-marquee-widget {
   border-bottom: 1px solid #333;
 }
 
-/* Nếu muốn ticker dính trên cùng khi cuộn */
+/* Thuộc tính Tickerbar */
 .ticker-fixed {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 9999;
+  background: #000 !important;  /* nền đen */
+  color: #fff !important;       /* chữ trắng */
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+/* Ẩn dòng "Powered by CoinGecko" */
+gecko-coin-price-marquee-widget::part(footer) {
+  display: none !important;
 }
