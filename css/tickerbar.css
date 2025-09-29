@@ -1,33 +1,33 @@
-/* ticker.css */
+.ticker-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 4px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid #333;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+  }
 
-/* Định dạng chung {
-  display: block;
-  width: 100%;
-  padding: 5px 0;
-  background: #000  /* nền tối */
-  color: #fff;        /* chữ trắng */
-  font-size: 14px;
-  border-bottom: 1px solid #333;
-}
+  .ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+  }
 
-/* Thuộc tính Tickerbar */
-.ticker-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  background: #000 /* nền đen */
-  color: #fff !important;       /* chữ trắng */
-  font-size: 14px;
-  padding: 4px 0;
-}
+  .ticker-item img {
+    width: 18px;
+    height: 18px;
+  }
 
-.ticker-content {
-  white-space: nowrap;
-}
-
-/* chỉ còn ký hiệu (BTC, SOL, ETH) */
-  gecko-coin-price-marquee-widget::part(name) {
-    display: none
-}
+  @media screen and (max-width: 600px) {
+    .ticker-bar { font-size: 12px; padding: 3px 8px; }
+    .ticker-item { margin-right: 10px; }
+    .ticker-item img { width: 14px; height: 14px; }
+  }
