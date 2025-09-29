@@ -17,32 +17,26 @@
   
 <body>
   <div class="container">
-   <!-- Tickerbar -->
    <div class="ticker-bar">
     <div id="ticker" class="ticker-content">Loading...</div>
    </div>
 
   <script>
+  const coins = ["bitcoin", "ethereum", "solana"];
   async function loadPrices() {
     try {
-      const res = await fetch("https://price.jup.ag/v6/price?ids=BTC");
+      const res = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${coins.join(',')}&vs_currencies=usd`);
       const data = await res.json();
-      const prices = data.data;
-
-      let html = `
-        BTC: $${prices.BTC.price.toFixed(0)} &nbsp;&nbsp;
-        
-      `;
-
+      const html = coins.map(c => `${c.toUpperCase()}: $${data[c].usd}`).join(' | ');
       document.getElementById("ticker").innerHTML = html;
-    } catch (e) {
+    } catch(e) {
       document.getElementById("ticker").innerHTML = "Lỗi tải giá!";
       console.error(e);
     }
   }
 
   loadPrices();
-  setInterval(loadPrices, 30000); // 30s update
+  setInterval(loadPrices, 30000); // cập nhật 30s
   </script>
     <!-- Chèn chọn ngôn ngữ -->
     <div class="lang-select">
