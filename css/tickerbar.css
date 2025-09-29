@@ -12,7 +12,7 @@
 
     .marquee {
       display: flex;
-      padding-right: 0;
+      padding-left: 0;
       justify-content: flex-start;
       
     }
