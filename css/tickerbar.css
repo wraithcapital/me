@@ -1,7 +1,6 @@
 /* ticker.css */
 
-/* Định dạng chung cho tickerbar */
-gecko-coin-price-marquee-widget {
+/* Định dạng chung {
   display: block;
   width: 100%;
   padding: 5px 0;
@@ -24,9 +23,8 @@ gecko-coin-price-marquee-widget {
   padding: 4px 0;
 }
 
-/* Ẩn dòng "Powered by CoinGecko" */
-  gecko-coin-price-marquee-widget::part(footer) {
-    display: none
+.ticker-content {
+  white-space: nowrap;
 }
 
 /* chỉ còn ký hiệu (BTC, SOL, ETH) */
