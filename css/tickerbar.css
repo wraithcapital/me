@@ -2,7 +2,7 @@
       postion: relative;
       display: flex;
       justify-content: flex-end;
-      
+      background: none !important;
       right: 3rem;
       overflow: hidden;
       box-sizing: border-box;
