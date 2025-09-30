@@ -2,7 +2,7 @@
       position: absolute;
       display: flex;
       background: #000 !important;
-      
+      justify-content: flex-start;
       overflow: hidden;
       box-sizing: border-box;
       left: 0;
@@ -13,7 +13,7 @@
     .marquee {
       display: flex;
       padding-left: 0;
-      justify-content: flex-start;
+      
       
     }
     @keyframes scroll-left {
