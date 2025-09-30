@@ -177,8 +177,7 @@ p {
 }
 
 .social-links img {
-  width: 28px;
-  height: 28px;
+  
   transition: transform 0.3s, filter 0.3s;
   cursor: pointer;
 }
