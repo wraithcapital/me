@@ -220,3 +220,11 @@ p {
   margin-top: 0.2rem;
   font-size: inherit;
 }
+
+/* Quote */
+.quote {
+  border-left: 4px solid blue; /* đổi màu thanh trước text */
+  padding-left: 10px;          /* đẩy chữ ra cách thanh một chút */
+  color: #fff;                 /* màu chữ (ví dụ trắng) */
+  background-color: #222;      /* màu nền (tùy chọn) */
+}
