@@ -13,9 +13,9 @@
     .marquee {
       display: flex;
       padding-left: 0;
-      
-      
+      margin: 0;
     }
+
     @keyframes scroll-left {
       0%   { transform: translateX(0); }
       100% { transform: translateX(-100%); }
