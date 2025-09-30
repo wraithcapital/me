@@ -223,8 +223,8 @@ p {
 
 /* Quote */
 .quote {
-  border-left: 4px solid blue; /* đổi màu thanh trước text */
+  border-left: 4px solid #f7931A; /* đổi màu thanh trước text */
   padding-left: 10px;          /* đẩy chữ ra cách thanh một chút */
   color: #fff;                 /* màu chữ (ví dụ trắng) */
-  background-color: #222;      /* màu nền (tùy chọn) */
+  background-color: none;      /* màu nền (tùy chọn) */
 }
