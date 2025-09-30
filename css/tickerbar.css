@@ -23,7 +23,7 @@
 
     .token {
       display: inline-flex;
-      align-items: left;
+      align-items: flex-start;
       gap: 6px;
       margin-right: 30px;
       font-size: 14px;
