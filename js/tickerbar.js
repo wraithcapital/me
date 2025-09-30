@@ -14,7 +14,7 @@ async function fetchPrices() {
     div.innerHTML = `
       <img src="${coin.image}" alt="${coin.name}">
       ${coin.symbol.toUpperCase()} 
-      <span class="price">$${coin.current_price.toLocaleString("en-US")}</span> 
+      <span class="price">$${coin.current_price.toLocaleString("en-US,{ minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span> 
       <span class="change ${changeClass}">${changeText}</span>
     `;
     ticker.appendChild(div);
