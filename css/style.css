@@ -9,7 +9,7 @@
  
 .line-break {
   display: block;
-  margin: 0.2rem 0; /* khoảng cách nhỏ <br> */
+  margin: 0.2rem 0; 
 }
 
 /* HIGHLIGHT TEXT */
@@ -27,11 +27,11 @@ body {
   font-family: 'Oswald', sans-serif;
   min-height: 100vh;
   display: flex;
-  justify-content: center; /* căn giữa container theo ngang */
-  align-items: flex-start; /* khối nội dung ở trên cùng */
+  justify-content: center;
+  align-items: flex-start; 
   padding-top: 1rem;
 
-  /* chống copy/select */
+  /* anticopy/select */
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -64,7 +64,7 @@ h2 {
 }
 
 .links a {
-  display: block;        /* mỗi a nằm 1 dòng */
+  display: block;        
   font-size: 1.1rem;
   color: #fff;
   text-decoration: none;
@@ -94,29 +94,29 @@ p {
 }
 
 .main-content {
-  flex: 1; /* phần nội dung chiếm hết không gian còn lại */
+  flex: 1; 
 }
 
 /*------------------------------------*/
-/* LANG SELECT / MENU NGÔN NGỮ */
+/* LANG SELECT*/
 /*------------------------------------*/
 .lang-select {
-  font-family: 'Oswald', 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif; /* hỗ trợ emoji */
+  font-family: 'Oswald', 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif;
   display: flex;
-  flex-direction: column;   /* link xếp dọc */
-  align-items: flex-start;  /* căn trái */
+  flex-direction: column;   
+  align-items: flex-start; 
   margin-bottom: 1rem;
 }
 
 .lang-label {
   color: #fff;
-  font-size: 0.8rem;  /* chữ không quá nhỏ */
+  font-size: 0.8rem; 
   font-style: italic;
   margin-bottom: 0.3rem;
 }
 
 .lang-link {
-  display: block; /* xuống dòng */
+  display: block;
   color: #ffffff;
   text-decoration: none;
   font-size: 0.8rem;
@@ -135,16 +135,16 @@ p {
 }
 
 .lang-link .fi {
-  width: 20px;        /* chiều ngang cờ */
-  height: 13px;       /* chiều cao cờ */
-  border-radius: 4px; /* bo góc lá cờ */
+  width: 20px;        
+  height: 13px;       
+  border-radius: 4px; 
 }
 
 /*------------------------------------*/
 /* CONTAINER */
 .container {
-  position: relative;       /* để social-links căn theo container */
-  max-width: 650px;         /* nhỏ lại như cũ */
+  position: relative;       
+  max-width: 650px;  
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
@@ -170,10 +170,10 @@ p {
 .social-links {
   position: absolute;
   right: 15px;
-  top: 1rem; /* bắt đầu từ trên cùng container */
+  top: 1rem; 
   display: flex;
-  gap: 0.5rem; /* khoảng cách giữa các icon*/
-  align-items: center; /* căn thẳng theo chiều dọc icon */
+  gap: 0.5rem; 
+  align-items: center;
 }
 
 .social-links img {
@@ -190,7 +190,7 @@ p {
 /*------------------------------------*/
 /* FOOTER */
 .site-footer {
-  display: inline-block; /* co theo nội dung */
+  display: inline-block;
   width: 100%;
   padding: 1rem 0rem;
   background-color: #000;
@@ -200,8 +200,8 @@ p {
   font-size: 0.8rem;
   text-align: center;
   letter-spacing: 0.2px;
-  margin-top: 5rem; /* cách nội dung phía trên */
-  flex-shrink: 0; /* không bị co lại */
+  margin-top: 5rem; 
+  flex-shrink: 0; 
   opacity: 0.2;
   
 }
@@ -223,8 +223,8 @@ p {
 
 /* Quote */
 .quote {
-  border-left: 4px solid #f7931A; /* đổi màu thanh trước text */
-  padding-left: 10px;          /* đẩy chữ ra cách thanh một chút */
-  color: #fff;                 /* màu chữ (ví dụ trắng) */
-  background-color: none;      /* màu nền (tùy chọn) */
+  border-left: 4px solid #f7931A; 
+  padding-left: 10px;          
+  color: #fff;                 
+  background-color: none;     
 }
