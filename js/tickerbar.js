@@ -21,6 +21,6 @@ async function fetchPrices() {
   });
 }
 
-// Refresh mỗi 30 giây
+// Refresh 30s
 fetchPrices();
 setInterval(fetchPrices, 30000);
